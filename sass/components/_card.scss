@@ -178,8 +178,9 @@
   }
 
 
-  @include respond(tab-port) {
-
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover:none) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;
@@ -193,7 +194,7 @@
 
       &--back {
         transform: rotateY(0deg);
-        clip-path: polygon(0% 15%,100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 15%, 100% 0, 100% 100%, 0% 100%);
       }
     }
 
@@ -212,9 +213,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      transform:translate(0);
-      padding:4rem;
- 
+      transform: translate(0);
+      padding: 4rem;
+
     }
 
     &__price-box {
